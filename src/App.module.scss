@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Sora&effect=emboss|outline');
+
+* {
+  box-sizing: border-box;
+}
+
+.backdrop {
+  height: 100vh;
+  background-image: url('./images/annie-spratt-gM8igOIP5MA-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navContainer {
+  display: flex;
+}
+
+.navLinks {
+  flex-grow: 1;
+}
+
+.powerBox {
+  width: 250px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.leftContainer {
+  display: flex;
+}
+
+.leftContainerLinks {
+  flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .hideForMobile {
+    display: none;
+  }
+}
+
+.home {
+  float: right;
+  transform: rotate(20deg);
+  color: white;
+}
+
+.blog {
+  display: inline-block;
+  transform: rotate(-20deg);
+  color: white;
+}

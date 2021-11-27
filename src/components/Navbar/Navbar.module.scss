@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  box-sizing: border-box;
+  font-family: "Sora", serif;
+  padding-bottom: 78px;
+}
+
+.halfCircle {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  background: radial-gradient(circle at 25% 35%, white 1px, gray 3%, #000000 60%, gray 100%);
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  border-top: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.icon {
+  color: #dcd9d9;
+  position: relative;
+  top: 30px;
+
+  &:hover {
+    color: #00f800;
+  }
+}
