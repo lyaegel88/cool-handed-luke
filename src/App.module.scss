@@ -19,34 +19,34 @@
   flex-grow: 1;
 }
 
-.powerBox {
-  width: 250px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .leftContainer {
   display: flex;
 }
 
-.leftContainerLinks {
-  flex: 1;
+.navIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  .hideForMobile {
-    display: none;
-  }
-}
-
-.home {
-  float: right;
-  transform: rotate(20deg);
+.home, .about, .blog {
   color: white;
 }
 
-.blog {
-  display: inline-block;
-  transform: rotate(-20deg);
-  color: white;
+.home:hover, .about:hover, .blog:hover {
+  color: #00f800
+}
+
+.aboutContainer {
+  position: relative;
+  top: -20px;
+  left: 30px;
+  transform: rotate(30deg);
+}
+
+.blogContainer {
+  position: relative;
+  top: -20px;
+  right: 30px;
+  transform: rotate(-30deg);
 }
