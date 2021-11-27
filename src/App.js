@@ -1,35 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './App.module.scss';
-import Navbar from "./components/Navbar/Navbar";
-import {faHome, faBlog, faAddressCard} from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import PowerGlobe from "./components/PowerGlobe/PowerGlobe";
+import NavLinks from "./components/NavLinks/NavLinks";
 
 const App = () => {
+    const [powerOn, setPowerOn] = useState(true);
+
+    const handlePowerButtonClick = () => {
+        setPowerOn(!powerOn);
+    }
+
     return (
         <div className={styles.backdrop}>
             <div className={styles.navContainer}>
                 <div className={styles.navLinks}>
-                    <div className={styles.leftContainer}>
-                       {/*Add logo/media icons/some media here later*/}
-                    </div>
+                    {/*Add logo/media icons/some media here later*/}
                 </div>
-                <div className={styles.navLinks}>
-                    <Navbar/>
-                    <div className={styles.navIcons}>
-                        <div>
-                            <div className={styles.aboutContainer}>
-                                <FontAwesomeIcon className={styles.about} icon={faAddressCard} size="2x"/>
-                            </div>
-                        </div>
-                        <div>
-                            <FontAwesomeIcon className={styles.home} icon={faHome} size="2x"/>
-                        </div>
-                        <div>
-                            <div className={styles.blogContainer}>
-                                <FontAwesomeIcon className={styles.blog} icon={faBlog} size="2x"/>
-                            </div>
-                        </div>
-                    </div>
+                <div className={styles.powerGlobe}>
+                    <PowerGlobe
+                        handleOnClick={handlePowerButtonClick}
+                        power={powerOn}/>
+                    {powerOn && <NavLinks />}
                 </div>
                 <div className={styles.navLinks}>
                     {/*Add something here later?*/}

@@ -19,34 +19,6 @@
   flex-grow: 1;
 }
 
-.leftContainer {
-  display: flex;
-}
-
-.navIcons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.home, .about, .blog {
-  color: white;
-}
-
-.home:hover, .about:hover, .blog:hover {
-  color: #00f800
-}
-
-.aboutContainer {
-  position: relative;
-  top: -20px;
-  left: 30px;
-  transform: rotate(30deg);
-}
-
-.blogContainer {
-  position: relative;
-  top: -20px;
-  right: 30px;
-  transform: rotate(-30deg);
+.powerGlobe {
+  width: 250px;
 }

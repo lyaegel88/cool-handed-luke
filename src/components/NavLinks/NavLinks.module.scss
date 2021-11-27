@@ -1,0 +1,42 @@
+.home, .about, .blog {
+  color: white;
+}
+
+.home:hover, .about:hover, .blog:hover {
+  color: #00f800
+}
+
+.homeContainer {
+  position: absolute;
+  max-width: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 135px;
+  text-align: center;
+}
+
+.aboutContainer {
+  position: absolute;
+  max-width: 46px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 150px;
+  top: 120px;
+  text-align: center;
+  transform: rotate(30deg);
+}
+
+.blogContainer {
+  position: absolute;
+  max-width: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 150px;
+  top: 120px;
+  text-align: center;
+  transform: rotate(-30deg);
+}

@@ -1,10 +1,10 @@
-.navbar {
+.powerGlobe {
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
   font-family: "Sora", serif;
-  padding-bottom: 85px;
+  padding-bottom: 120px;
 }
 
 .halfCircle {
@@ -21,11 +21,18 @@
 }
 
 .icon {
-  color: #dcd9d9;
   position: relative;
   top: 30px;
 
+  &.colorOn {
+    color: #48ff00;
+  }
+
+  &.colorOff {
+    color: gray;
+  }
+
   &:hover {
-    color: #00f800;
+    color: #03cb03;
   }
 }
