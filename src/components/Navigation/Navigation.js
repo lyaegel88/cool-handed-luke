@@ -2,6 +2,8 @@ import styles from "./Navigation.module.scss";
 import PowerGlobe from "../PowerGlobe/PowerGlobe";
 import NavLinks from "../NavLinks/NavLinks";
 import React, {useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebookSquare, faLinkedin, faGithubSquare, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons"
 
 const Navigation = () => {
     const [powerOn, setPowerOn] = useState(true);
@@ -23,6 +25,28 @@ const Navigation = () => {
 
             </div>
             <div className={styles.navLinks}>
+                <div className={styles.socialMediaContainer}>
+                    <FontAwesomeIcon
+                        className={styles.socialMediaIcons}
+                        icon={faFacebookSquare}
+                        size="2x"
+                    />
+                    <FontAwesomeIcon
+                        className={styles.socialMediaIcons}
+                        icon={faLinkedin}
+                        size="2x"
+                    />
+                    <FontAwesomeIcon
+                        className={styles.socialMediaIcons}
+                        icon={faGithubSquare}
+                        size="2x"
+                    />
+                    <FontAwesomeIcon
+                        className={styles.socialMediaIcons}
+                        icon={faYoutubeSquare}
+                        size="2x"
+                    />
+                </div>
                 {/*Add something here later?*/}
             </div>
         </div>

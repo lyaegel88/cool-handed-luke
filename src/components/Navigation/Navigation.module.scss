@@ -3,9 +3,30 @@
 }
 
 .navLinks {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .powerGlobe {
   width: 250px;
+}
+
+.socialMediaContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+.socialMediaIcons {
+  color: white;
+  margin: 8px;
+
+  &:hover {
+    color: #48ff00
+  }
+}
+
+@media (max-width: 1229px) {
+.socialMediaContainer {
+  display: none;
+}
 }
