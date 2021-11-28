@@ -1,0 +1,24 @@
+@import '../../resources/scss/_main.scss';
+
+@media (min-width: 1200px) {
+  .mission {
+    margin: 25px auto auto;
+    max-width: 50%;
+    padding: 25px;
+    border: solid 5px white;
+    text-align: center;
+  }
+
+  .missionText {
+    font-family: $title-font-family;
+    font-size: $title-font-size-mobile;
+    color: $title-font-color;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mission {
+    display: none;
+  }
+}

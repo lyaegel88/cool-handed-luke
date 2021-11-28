@@ -1,0 +1,52 @@
+@import '../../../resources/scss/_main.scss';
+
+@media only screen and (min-width: 1230px) {
+
+  .ProfileCircle {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  }
+
+  .ProfileImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .TitleFont {
+    font-family: $title-font-family;
+    font-size: $title-font-size;
+    color: $title-font-color;
+    text-align: center;
+    margin-top: 30%;
+  }
+
+  .TitleCircle {
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    float: left;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  }
+
+  .NameFont {
+    font-family: $title-font-family;
+    font-size: $title-font-size;
+    color: $title-font-color;
+    text-align: center;
+    margin-top: 15%;
+  }
+
+  .NameCircle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    float: right;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  }
+}
