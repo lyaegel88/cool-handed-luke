@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sora&effect=emboss|outline');
+$title-font-family:  Georgia, serif;
+$title-font-size: 75px;
+$title-font-size-mobile: 35px;
+$title-font-color: white;
 
 * {
   box-sizing: border-box;
@@ -6,7 +10,7 @@
 
 .backdrop {
   height: 100vh;
-  background-image: url('./images/annie-spratt-gM8igOIP5MA-unsplash.jpg');
+  background-image: url('./assets/images/annie-spratt-gM8igOIP5MA-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,4 +25,35 @@
 
 .powerGlobe {
   width: 250px;
+}
+
+@media (min-width: 1375px) {
+  .profile {
+    margin-top: 25px;
+    padding: 25px;
+    border: solid 15px white;
+  }
+}
+
+@media (min-width: 800px) {
+  .mission {
+    margin: 40px auto auto;
+    max-width: 50%;
+    padding: 25px;
+    border: solid 5px white;
+    text-align: center;
+  }
+
+  .missionText {
+    font-family: $title-font-family;
+    font-size: $title-font-size-mobile;
+    color: $title-font-color;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 800px) {
+  .mission {
+    display: none;
+  }
 }
