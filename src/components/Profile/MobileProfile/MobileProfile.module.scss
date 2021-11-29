@@ -45,7 +45,44 @@
     width: 200px;
     height: 200px;
     background: rgba(0, 0, 0, 0.3);
-    margin: auto auto 5%;
-    margin-top: 5px;
+    margin: 5px auto 5%;
+  }
+
+  .icons {
+    color: white;
+
+    &:hover {
+      color: #48ff00
+    }
+  }
+
+  .iconsContainer {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .facebookIcon {
+    position: absolute;
+    left: 0;
+    top: 25px;
+  }
+
+  .linkedInIcon {
+    position: absolute;
+    left: 0;
+    top: 140px;
+  }
+
+  .githubIcon {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+
+  .youtubeIcon {
+    position: absolute;
+    right: 0;
+    top: 140px;
   }
 }
