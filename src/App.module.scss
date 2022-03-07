@@ -6,17 +6,8 @@
 }
 
 .backdrop {
-  height: 100vh;
+  min-height: 100vh;
+  background-size: auto;
   background-image: url('./resources/images/annie-spratt-gM8igOIP5MA-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (max-width: 1200px) {
-  .backdrop {
-    height: 128vh;
-    background-image: url('./resources/images/annie-spratt-gM8igOIP5MA-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-repeat: repeat;
 }

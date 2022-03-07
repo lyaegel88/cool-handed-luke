@@ -1,0 +1,14 @@
+.socialMediaContainer {
+  display: flex;
+  justify-content: center;
+  padding-right: 25px;
+}
+
+.socialMediaIcons {
+  color: white;
+  margin: 8px;
+
+  &:hover {
+    color: #48ff00
+  }
+}

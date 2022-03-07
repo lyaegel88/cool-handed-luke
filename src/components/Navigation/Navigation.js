@@ -26,13 +26,6 @@ const Navigation = () => {
             </div>
             <div className={styles.navLinks}>
                 <div className={styles.socialMediaContainer}>
-                    <a href="https://www.facebook.com/lyaegel" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon
-                            className={styles.socialMediaIcons}
-                            icon={faFacebookSquare}
-                            size="2x"
-                        />
-                    </a>
                     <a href="https://www.linkedin.com/in/luke-y-7b720a119/" target="_blank" rel="noreferrer">
                         <FontAwesomeIcon
                             className={styles.socialMediaIcons}
@@ -44,6 +37,13 @@ const Navigation = () => {
                         <FontAwesomeIcon
                             className={styles.socialMediaIcons}
                             icon={faGithubSquare}
+                            size="2x"
+                        />
+                    </a>
+                    <a href="https://www.facebook.com/lyaegel" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon
+                            className={styles.socialMediaIcons}
+                            icon={faFacebookSquare}
                             size="2x"
                         />
                     </a>

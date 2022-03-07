@@ -1,0 +1,26 @@
+@import '../_main.scss';
+
+@mixin aboutContainer ($margin-bottom, $max-width, $font-size) {
+  .aboutContainer {
+    margin: 25px auto $margin-bottom;
+    max-width: $max-width;
+    padding: 25px;
+    border: solid 5px white;
+    text-align: center;
+  }
+
+  .aboutText {
+    font-family: $title-font-family;
+    font-size: $font-size;
+    color: $title-font-color;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 1200px) {
+  @include aboutContainer($margin-bottom: auto, $max-width: 50%, $font-size: 28px);
+}
+
+@media (max-width: 1400px) {
+  @include aboutContainer($margin-bottom: 10px, $max-width: 90%, $font-size: 20px);
+}

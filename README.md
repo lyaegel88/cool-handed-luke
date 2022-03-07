@@ -1,2 +1,5 @@
 # Cool Handed Luke
-This is a ReactJS app. 
+## Overview
+This repo is for my personal website built with ReactJS. 
+
+**Link to the website**: https://coolhandedluke.net 
